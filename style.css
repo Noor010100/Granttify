@@ -1,0 +1,394 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.insights .icon{
+    width: 6vw;
+    height: 6vw;
+}
+.hero{
+    background-image: url(./assests/image);
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+ /* Container Styling */
+ .feature-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Section Header */
+  .feature-header{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+ 
+  .features img {
+    width: 10vw;
+    margin-top: 4vw;
+  }
+  
+
+  .feature-container h1 {
+    margin: 10px 0;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  .feature-container h4 {
+    color: #666;
+    margin-bottom: 40px;
+  }
+
+  /* Grid Layout for Features */
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .feature-item {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+
+  .feature-item img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .feature-item h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .feature-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+  }
+
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+    .feature-container h1 {
+      font-size: 1.5rem;
+    }
+    .features h1 {
+      font-size: 1.4rem;
+    }
+  }
+
+  /* Container and Header */
+.pricing-container {
+    text-align: center;
+    color: #fff;
+    background-image: url(./assests/pricingbg.png);
+    background-color: black;
+    padding: 40px;
+  }
+  
+  /* .pricing-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .pricing-title h1 {
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .toggle-container {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .toggle-option {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    border: none;
+  }
+  
+  .toggle-option:hover {
+    background: rgba(62, 60, 60, 0.537);
+    border-radius: 50px;
+  }
+   */
+  /* Pricing Grid */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+  }
+  
+  /* Pricing Card */
+  .pricing-card {
+    background: rgba(255, 255, 255, 0.194);
+    padding:80px 40px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pricing-card.highlighted {
+    background: #fff;
+    color: #000;
+  }
+  
+  .pricing-card h3 {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  .pricing-card h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  
+  .pricing-card p {
+    font-size: 0.9rem;
+    color: gray;
+    font-style: bold;
+    margin-bottom: 20px;
+  }
+  .pricing-card h4{
+    font-style: bold;
+  }
+  
+  .pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+  
+  .pricing-card ul li {
+    padding: 5px 0;
+    color: gray;
+  }
+  
+  .btn-get-started {
+    width: 100%;
+    padding: 10px;
+    background: #5e5d5d;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .highlighted .btn-get-started {
+    background: #000;
+    color: #fff;
+  }
+  
+  .btn-get-started:hover {
+    background: #444;
+  }
+  /* Pricing Header Styles */
+.pricing-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Pricing Title Section */
+  .pricing-title {
+   
+    width: 100%;
+  }
+  .pricing-title h1{
+    font-size: 4vw;
+    font-weight: bold;
+    margin: 0;
+  }
+  .pricing-title img{
+    width: 5vw;
+  }
+  
+  .pricing-icon {
+    width: 4vw;
+    max-width: 60px;
+    height: auto;
+  }
+  
+  @keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* .icon {
+    animation: float 2s ease infinite;
+} */
+  /* Toggle Button Styles */
+  .toggle-container {
+    display: flex;
+    gap: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .toggle-option {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    border: none;
+  }
+  
+  .toggle-option:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .pricing-header {
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      /* text-align: start; */
+    }
+    .pricing-header img{
+        width: 10vw;
+    }
+  
+  
+    .pricing-title h1{
+        font-size: 6vw;
+    }
+  
+    .toggle-container {
+      justify-content: start;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .toggle-option:hover {
+        background: white;
+        color: black;
+      }
+  }
+  .pricing{
+    min-height: 100vh;
+  }
+  .contact {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assests/background.png);
+    background-size: cover;
+    background: linear-gradient(to bottom right, black,black,black, rgba(0, 89, 255, 0.436));
+    background-position: center;
+    background-color: black;
+    padding: 10vw;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10vw;
+}
+.frame img{
+    width: 10vw;
+}
+
+ /* Adjustments for smaller screens */
+ @media (max-width: 755px) {
+  /* Navigation adjustments */
+  #routes {
+      display: none; /* Hide route links on smaller screens */
+  }
+  .buttons button {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+  }
+  #logo h4 {
+      font-size: 1rem;
+  }
+
+  /* Hero section adjustments */
+  .hero {
+      flex-direction: column;
+      padding: 1.5rem;
+  }
+  .hero-part1, .hero-part2 {
+      width: 100%;
+      padding: 1rem;
+  }
+  .hero-part1 h1 {
+      font-size: 6vw;
+  }
+  .hero-part1 h4 {
+      font-size: 1rem;
+  }
+  .hero-part1 .buttons button {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+  }
+
+  /* Adjusting "Goals & Reporting" section */
+  #goals {
+      width: 70vw;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+  }
+
+  /* Trusted logos adjustments */
+  .companies .logos img {
+      width: 25vw;
+  }
+
+  /* Insights section adjustments */
+  .insight1 img, .insight2 img {
+      width: 50vw;
+      height: auto;
+  }
+  .insights .icon {
+      width: 5vw;
+      height: auto;
+  }
+  .insight2 img {
+      width: 60vw;
+  }
+}
